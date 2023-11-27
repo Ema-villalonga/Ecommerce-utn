@@ -1,0 +1,38 @@
+.container-form{
+    display: block;
+    background-color: fff;
+    box-shadow: 1px 1px 3px 2px rgb(221, 221, 221);
+    margin: 40px auto;
+    max-width: 600px;
+    max-height: 700px;
+    padding: 20px 40px;
+}
+
+.container-form input, textarea{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(214, 211, 211);
+    border: 1px solid rgb(221, 221, 221);
+    
+}
+
+.container-form span {
+    color: rgb(19, 40, 231);
+}
+
+.container-form button {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 80px;
+    align-items: center;
+    border: none;
+    background-color: rgb(19, 40, 231);
+    color: rgb(221, 221, 221);
+    cursor: pointer;
+    margin: 20px;
+}
