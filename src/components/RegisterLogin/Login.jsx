@@ -1,9 +1,9 @@
 import './Login.css';
 
-export default function About(){
+export default function Login(){
     return(
         <section>
-            Login
+            
         </section>
     )
 }

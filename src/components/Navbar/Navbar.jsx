@@ -7,7 +7,7 @@ export default function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false)
   return(
     <nav className='nav-container'>
-        <Link to='/' className='nav-logo'>My Shop</Link>
+        <Link to='/' className='nav-logo'>Shop</Link>
         <div className='icon' onClick={() => {
             setMenuOpen(!menuOpen)
         }}>
@@ -19,7 +19,7 @@ export default function Navbar(){
                 <li><NavLink to='/products'>Products</NavLink></li>
                 <li><NavLink to='/about'>About</NavLink></li>
                 <li><NavLink to='/contact'>Contact</NavLink></li>
-                <li><NavLink to='/login'>Login</NavLink></li>
+                <li><NavLink to='/register'>Register</NavLink></li>
             </ul>
             </div>
         </nav>

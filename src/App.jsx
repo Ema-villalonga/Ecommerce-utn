@@ -5,7 +5,8 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Products from './components/Products/Products';
 import About from './components/About/About';
-import Login from './components/Login/Login';
+import Register from './components/RegisterLogin/Register';
+import Login from './components/RegisterLogin/Login';
 import FormContact from './components/FormContact/FormContact';
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/products'  element={<Products />} products={products}/>
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<FormContact />}/>
+        <Route path='/register' element={<Register />}/>
         <Route path='/login' element={<Login />}/>
       </Routes>
     </>
