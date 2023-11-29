@@ -2,6 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import  { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Register.css';
+import { Link } from 'react-router-dom';
+
 
 const USER_REGEX = /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+(?:\s+[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+){1,5}(?:\s+[-\sa-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+)?$/;
 const EMAIL_REGEX = /[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}/;
@@ -83,14 +85,14 @@ export default function Register(){
             <section>
                 <h1>Success</h1>
                 <p>
-                    <a href="#">Sign In</a>
+                    <Link to='/login'>Login</Link>
                 </p>
             </section>
         ) : (
     
         <section>
         <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-        <h1>Register</h1>
+        <h1 className="title-register"><span>Register</span></h1>
         <form onSubmit={handleSubmit} className="form-register" >
             <label htmlFor="username">
                 Username:
@@ -211,7 +213,7 @@ export default function Register(){
         <p>
             Already register?<br />
             <span className="line">
-                <a href="#">Sign In</a>
+                <Link to='/login'>Login</Link>
             </span>
         </p>
     </section>

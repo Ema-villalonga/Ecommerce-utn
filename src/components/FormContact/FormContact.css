@@ -1,13 +1,12 @@
 .container-form{
     display: block;
-    background-color: fff;
+    background-color: #bdb9b9;
     box-shadow: 1px 1px 3px 2px rgb(221, 221, 221);
     margin: 2% auto;
-    max-width: 600px;
+    max-width: 500px;
     max-height: 700px;
     padding: 20px 40px;
 }
-
 
 .container-form input, textarea{
     display: flex;
@@ -15,14 +14,17 @@
     width: 100%;
     margin: 10px auto;
     padding: 8px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(214, 211, 211);
-    border: 1px solid rgb(221, 221, 221);    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
 }
 
 
 .container-form span {
     color: rgb(19, 40, 231);
+}
+
+.inputs-contact input{
+    border-radius: 0.5rem;
+    font-size: .9rem;
 }
 
 .container-form button {
@@ -35,7 +37,6 @@
     background-color: rgb(19, 40, 231);
     color: rgb(221, 221, 221);
     cursor: pointer;
-    margin: 20px;
     transition: all .8s;
 }
 

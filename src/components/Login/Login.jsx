@@ -1,4 +1,5 @@
-import { useRef, useState, useEffect, useContext } from "react";
+import { useRef, useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 import './Login.css';
 
@@ -35,15 +36,15 @@ export default function Login(){
                     <h1>You are logged in!</h1>
                     <br />
                     <p>
-                        <a href="#">Go to Home</a>
+                        <Link to='/'>Home</Link>
                     </p>
                 </section>
             ) : (
-            <main>
+            <main className="container-sign-in">
                 <section>
                 <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                <h1>Sign In</h1>
-                <form onSubmit={handleSubmit}>
+                <h2 className="title-sign-in">Sign In</h2>
+                <form onSubmit={handleSubmit} className="form-contact">
                     <label htmlFor="useremail">
                         Email:
                     </label>
@@ -54,7 +55,7 @@ export default function Login(){
                         ref={userRef}
                         autoComplete="off"
                         onChange={(e) => setUserEmail(e.target.value)}
-                        value={user}
+                        value={userEmail}
                         required
                     />
 
@@ -75,8 +76,8 @@ export default function Login(){
                 <p>
                     Need an Account?<br />
                     <span className="line">
-                            <a href="#">Sign Up</a>
-                        </span> 
+                        <Link to='/register'>Sign Up</Link>
+                    </span> 
                 </p>
             </section>
             </main>

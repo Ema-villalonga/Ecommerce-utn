@@ -1,15 +1,15 @@
 
 .container-register {
-    max-width: 420px;
+    max-width: 450px;
     min-height: 400px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     padding: 1rem;
     margin: 1% auto;
-    background-color: rgba(58, 54, 54, 0.4);
-    border: 1px solid #ddd;
-    
+    background-color: #bdb9b9;
+    border: 1px solid rgb(221, 221, 221);    
+    box-shadow: 1px 1px 3px 2px rgb(221, 221, 221);
 }
 
 .form-register {
@@ -18,6 +18,11 @@
     justify-content: space-evenly;
     flex-grow: 1;
     padding-bottom: 1rem;
+
+}
+
+.title-register span {
+    color: rgb(19, 40, 231);
 }
 
 a, a:visited {
@@ -92,5 +97,14 @@ button:hover{
 }
 
 .line {
-    display: inline-block;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.line a {
+    color: rgb(19, 40, 231);
+}
+
+.line a:hover{
+    color: #000;
 }

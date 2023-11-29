@@ -16,11 +16,13 @@ export default function FormContact(){
     return (
         <form className='container-form' method='post' onSubmit={handleSubmit}>
             <h1 className='title-form'>Contact <span>Here</span></h1>
-            <input type='text' name='name'  id='' onChange={handleChange} value={data.name} placeholder='Enter your last name'/>
-            <input type='email' name='email'  id='' onChange={handleChange} value={data.email} placeholder='Enter your email addre'/>
-            <input type='tel' name='phone'  id='' onChange={handleChange} value={data.phone} placeholder='Enter your number telephone'/>
-            <textarea name='mensagge' id='' onChange={handleChange} value={data.mensagge} cols='40' rows='10' placeholder='Type here...'/>
-            <button className='btn-send-contact' type='submit'>Send</button>
+            <div className='inputs-contact' onChange={handleChange}>
+                <input type='text' name='name'  id='' value={data.name} placeholder='Enter your last name'/>
+                <input type='email' name='email'  id='' value={data.email} placeholder='Enter your email addre'/>
+                <input type='tel' name='phone'  id='' value={data.phone} placeholder='Enter your number telephone'/>
+                <textarea name='mensagge' id='' value={data.mensagge} cols='40' rows='10' placeholder='Type here...'/>
+                <button className='btn-send-contact' type='submit'>Send</button>
+            </div>
             <p>{data.name}{data.email}{data.phone}{data.mensagge}</p>
         </form>
     )
