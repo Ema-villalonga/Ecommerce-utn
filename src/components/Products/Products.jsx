@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './Products.css';
 
-
 export default function Products({products}){
     
     const [buy, setBuy] = useState(false);

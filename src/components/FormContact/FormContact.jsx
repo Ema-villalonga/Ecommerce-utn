@@ -20,7 +20,7 @@ export default function FormContact(){
             <input type='email' name='email'  id='' onChange={handleChange} value={data.email} placeholder='Enter your email addre'/>
             <input type='tel' name='phone'  id='' onChange={handleChange} value={data.phone} placeholder='Enter your number telephone'/>
             <textarea name='mensagge' id='' onChange={handleChange} value={data.mensagge} cols='40' rows='10' placeholder='Type here...'/>
-            <button type='submit'>Send</button>
+            <button className='btn-send-contact' type='submit'>Send</button>
             <p>{data.name}{data.email}{data.phone}{data.mensagge}</p>
         </form>
     )

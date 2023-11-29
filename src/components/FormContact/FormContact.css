@@ -36,4 +36,9 @@
     color: rgb(221, 221, 221);
     cursor: pointer;
     margin: 20px;
+    transition: all .8s;
+}
+
+.btn-send-contact:hover{
+    background-color: black;
 }

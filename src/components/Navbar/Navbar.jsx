@@ -7,7 +7,7 @@ export default function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false)
   return(
     <nav className='nav-container'>
-        <Link to='/' className='nav-logo'>Shop</Link>
+        <Link to='/' className='nav-logo'>Tech Shop</Link>
         <div className='icon' onClick={() => {
             setMenuOpen(!menuOpen)
         }}>
