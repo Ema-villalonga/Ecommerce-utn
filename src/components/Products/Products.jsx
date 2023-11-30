@@ -18,8 +18,16 @@ export default function Products({products}){
 
               <div>
                 <strong>
-                  {product.title} - ${product.price} - Sku: {product.sku} -
-                  Stock: {product.stock} - Description: {product.description}
+                  {product.title} - Sku: {product.sku} - Description: {product.description}
+                </strong>
+              </div>
+
+              <div className='box-price-stock'>
+                <strong className='box-price'>
+                  Price: ${product.price}
+                </strong>
+                <strong className='box-stock'>
+                  Stock: {product.stock}
                 </strong>
               </div>
 

@@ -48,6 +48,23 @@
     background: #fff;
 }
 
+.box-price-stock{
+    display: flex;
+    background-color: rgb(85, 82, 82);
+}
+
+.box-price{
+    justify-content: start;
+    margin: 0;
+    padding: 0 25px;
+}
+
+.box-stock {
+    justify-content: end;
+    margin: 0;
+    padding: 0 25px;
+}
+
 .btn-buy{
     display: flex;
     justify-content: center;
